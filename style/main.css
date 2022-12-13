@@ -1,3 +1,79 @@
 .MainPageWrapper {
     height: 100vh;
 }
+
+/*nav bar style*/
+.navbar .container a{
+    color: #6d6df0;
+    transition: 0.8s color;
+}
+
+
+.navbar .container a:hover{         /*only when hovered over the ankers (#) in containers in navbar*/
+    text-decoration: underline;
+    color: #b2b2d2;
+    transition: 0.8ms color;
+}
+
+.navbar .container a:visited{
+    color: mediumpurple;
+}
+
+
+/*styling the timer*/
+.timer{
+    font-size: 3em;     /*em = responsive size -> what is the size of the parent (col)? calculates its size based on that*/
+    font-weight: 100;
+    color: whitesmoke;
+    padding: 20px;
+    width: 100%;         /*vw = viewport width*/
+    display: flex;          /*flexible alignment, it hugs the content*/
+    justify-content: center;
+    gap: 2vw;
+}
+
+.timer div{
+    background: dodgerblue;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+
+
+
+/*section bigImage and children*/
+.bigImage{
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    /*for this section to acknowledge the elements below or above it, meaning to avoid overlapping we call Position:relative*/
+    position: relative;
+}
+
+.Banner{
+    display: flex;
+    justify-content: center;
+    padding: 2vh 2vw;      /*depends on the PARENT of banner!! in % / and is responsive to viewport*/
+}
+
+.title{
+    font-size: 4.5rem !important;       /*bootstrap class display-4 is blocking a change in font-size -> but i can use !important to force it, my browser is not showing it correctly? update*/
+    text-shadow: 0 5px 35px #d2d2d2;
+}
+
+.info{
+    font-size: 2rem;
+    text-shadow: 0 5px 35px #d2d2d2;
+    }
+
+.heroText{
+    text-align: center;
+    box-shadow: 0 0 15px 35px #b9b9b9;
+    background: #b9b9b9;
+    border-radius: 15px;
+    /*center the heroText in the bigImage parent*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }

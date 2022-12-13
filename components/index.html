@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Green-E</title>
-    <link rel="stylesheet" href="/style/main.css">
-        <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+   <meta charset="UTF-8">
+   <title>Green-E</title>
+   <link rel="stylesheet" href="/style/main.css">
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+           integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+           crossorigin="anonymous"></script>
 </head>
 <body>
 <!--main page wrapper-->
 <div class="MainPageWrapper container-fluid">
-    <div class="navbar bg-dark">
+   <div class="navbar navbar-expand-md bg-light sticky-top">           <!--md = medium size-->
+      <div class="container">
+         <a href="index.html">
+            <p class="navbar-brand">Green-E</p>
+         </a>
 
-    </div>
-    <div class="Banner container">
-        <p class="display-4 text-info">Welcome to our Page</p>
-        <br/>
-        <p class="lead text-warning text-bg-dark">We Are Launching our Campaign in:</p>
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="contact_portfolio.html">Contact&Portfolio</a>
+            </li>
+         </ul>
 
-        <div class="timer">
-            <!--empty-->
-        </div>
-        <button class="btn btn-outline-primary">Trigger JS Function</button>
-    </div>
+      </div>
+
+   </div>
+
+   <section class="bigImage" id="home">
+      <div class="Banner container-fluid">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heroText">
+               <!--responsive for large, medium,.. screen  sizes -> 12 columns-->
+               <p class="display-4 title">Welcome to our Page</p>
+
+               <br/>
+
+               <div class="col">
+                  <p class="lead info">We Are Launching our Campaign in:</p>
+               </div>
+
+               <div class="col">
+                  <div class="timer">
+                     <!--empty-->
+                  </div>
+               </div>
+
+               <div class="col">
+                  <button class="btn btn-outline-primary">Trigger JS Function</button>
+                  <a href="#bP" class="display-4">Take me to Blogs & Projects</a>
+               </div><!--column end-->
+            </div><!--column end col-12-lg-md-sm-xs-->
+         </div><!-- closing the Row -->
+      </div><!-- closing the Banner -->
+
+   </section>
+
+   <!--blogs and projects section-->
+   <section class="blogs_projects" id="bP">
+<h1 class="display-1">Here</h1>
+   </section>
 </div>
 <script src="/scripts/script.js"></script>
 </body>

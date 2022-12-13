@@ -38,19 +38,16 @@ function TimerFunction() {
 
 }
 
-/*TimerFuntion wird getriggert und ausgeführt*/
-TimerFunction();
 
-/*1000-> pro 1 sekunde wird TimerFunction automatisch ausgeführt/getriggert, 
+
+/*1000-> pro 1 sekunde wird TimerFunction automatisch ausgeführt/getriggert,
 2000 würde alle 2 sek sein*/
-setInterval(
-    'TimerFunction()',  /*code to be triggered after delay time is up*/
-    1000);       /*delay*/
-
-
 /*addEventListener checkt ob etwas bestimmtes mit dem button passiert, in diesem Fall ob er geclickt wird. jedesmal wenn button geclickt wird, wird TimerFunction getriggert*/
 button.addEventListener("click", () => {
-    TimerFunction();
+    /*TimerFunction();*/
+    setInterval(
+        'TimerFunction()',  /*code to be triggered after delay time is up*/
+        1000);              /*delay*/
 })
-
+/*this function only starts when the button is clicked*/
 
